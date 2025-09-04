@@ -12,7 +12,7 @@ I design, secure, and automate networks for hospitals and large enterprises. I b
 - **Experience:** 6+ years across hospitals and enterprise networks (Ascension Health IL: 12 hospitals, 3 data centers, 100+ clinics)
 - **Certifications:** CCNP, CCNA, JNCIA
 - **Focus:** Network automation, security hardening, and scalable operations
-- **Lab:** Proxmox + EVE‑NG Pro, PA‑VM, CSR1000v, Windows Server 2022
+- **Lab:** Proxmox + EVE‑NG Pro, Linux VMs with Ansible, GitHub Runner, and Netbox, Windows LTSC Client, Windows Server (DHCP,AD,Certificate Authority, LDAP)
 - **Interests:** QoS, App‑ID/TLS decryption, BGP/OSPF, Wi‑Fi design
 
 **Selected Projects**
