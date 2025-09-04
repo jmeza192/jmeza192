@@ -12,14 +12,14 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
 - **VLAN Changer + CI/CD** (`Vlan-Changer/`)
   - Problem: Moving users/devices required ARP/MAC lookups, CDP walks, and careful config/verification on access ports.
   - What it does: Locates ports by IP/MAC, traverses CDP across trunks/port‑channels, applies access/voice VLANs, verifies, saves, and can roll back. Ships with GitHub Actions for pre/post audits and reports.
-  - Results: Reconfigured ~200 devices in under 4 hours (saved ~3 days of manual effort). Repeatable runs with logs and artifacts — no manual switch hunting.
+  - Results: Instead of having to manually reconfigure 100s of devices per day during a divesture project, this script allowed me to more quickly reconfigure devices saving me several hours of work everyday
   - Code: https://github.com/jmeza192/Vlan_Changer
   - Tech: Python, Netmiko, GitHub Actions
 
 - **Wiping Config** (inside `network-toolbox-public/tools/wiping config/`)
   - Problem: Baseline cleanup and decommission steps require many manual commands and are easy to miss.
   - What it does: Removes SNMP/NTP, banners, logging hosts, TACACS servers/keys, specific users, legacy TTY settings, and more with clear progress/error logs.
-  - Results: Collapses per‑device cleanup into a single repeatable run — speeding up fleet resets and standardization.
+  - Results: Allowed our team to quickly sanitize 100s of network devices saving us days of work in prepping devices to handover
   - Code: https://github.com/jmeza192/network-toolbox-public/tree/main/tools/wiping%20config
   - Tech: Python, Netmiko
   - Note: Destructive by design — use intentionally and review scope.
@@ -30,19 +30,6 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
   - Results: Cuts repetitive CLI steps to a single command; easier to run at scale and hand off to teammates with templates.
   - Code: https://github.com/jmeza192/network-toolbox-public
   - Tech: Python, Netmiko, Pandas, dotenv
-
-
-
-- **Personal Website (Portfolio)** (`jmeza192.github.io-main/`)
-  - What it does: Quick portfolio with resume download, project summaries, and links.
-  - Live: https://jmeza192.github.io
-  - Code: https://github.com/jmeza192/jmeza192.github.io
-
-**Why This Matters**
-
-- Turns multi‑hop troubleshooting into deterministic workflows with verification and optional rollback
-- Standardized patterns: environment‑isolated configs, credential fallback, adaptive timing, pre/post checks
-- Produces artifacts (logs/reports) for change records and troubleshooting
 
 **Tech Stack**
 
