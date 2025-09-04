@@ -1,34 +1,46 @@
-# Jesus Meza — Network Automation Engineer
+# Jesus Meza — Network Automation Portfolio
 
-Im Jesus Meza and im currently a Senior Network Engineer with HCLTech where I am responsible for any network operation issues and netowrk related projects. As of recently I've discovered the world of automation and it has completly changed my view on Network Engineering. I've created several scripts that you can find under my Network-Toolbox folder many of which has helped me and my small team save 10s and 10s of hours of manually work. 
+I build small, reliable network‑automation tools that turn tedious multi‑step changes into repeatable, auditable runs. This README focuses on what the repos do and the time they save in real workflows.
 
 **Socials**
 
 [![GitHub](https://img.shields.io/badge/GitHub-jmeza192-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jmeza192)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-jesus%20meza-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jmeza192)
 
-**Selected Projects**
+**Projects + Impact**
 
-- **VLAN Changer + CI/CD:** End‑to‑end VLAN change automation with verification and optional rollback. Finds switchports via IP/MAC lookup, traverses CDP through trunks/port‑channels, applies/validates config, and ships with a GitHub Actions pipeline for audits and reports.
+- **VLAN Changer + CI/CD** (`Vlan-Changer/`)
+  - Problem: Moving users/devices required ARP/MAC lookups, CDP walks, and careful config/verification on access ports.
+  - What it does: Locates ports by IP/MAC, traverses CDP across trunks/port‑channels, applies access/voice VLANs, verifies, saves, and can roll back. Ships with GitHub Actions for pre/post audits and reports.
+  - Results: Reconfigured ~200 devices in under 4 hours (saved ~3 days of manual effort). Repeatable runs with logs and artifacts — no manual switch hunting.
   - Code: https://github.com/jmeza192/Vlan_Changer
   - Tech: Python, Netmiko, GitHub Actions
 
-**Impact**
-
-- Automated VLAN reassignment workflow allowing use to more easily and effieciently update vlans for 100s of devices per day during the diversture of several hospitals and clinics.
-- Standardized automation patterns with environment‑isolated configs and multi‑credential fallback for reliability
-
-- **Network Toolbox:** A collection of Python automation tools for Cisco environments: AP discovery via CDP, Serial collection, TACACS audit/update, VLAN changes, and config cleanup with robust `.env`‑based credential handling.
+- **Network Toolbox** (`network-toolbox-public/`)
+  - Problem: Routine fleet tasks (AP discovery, serial collection, TACACS audits, config cleanup) consumed time and were error‑prone.
+  - What it does: A set of targeted scripts with `.env` templates per tool. Batch operations against device lists, robust credential fallback, and clear progress/logging.
+  - Results: Cuts repetitive CLI steps to a single command; easier to run at scale and hand off to teammates with templates.
   - Code: https://github.com/jmeza192/network-toolbox-public
   - Tech: Python, Netmiko, Pandas, dotenv
+
+- **Personal Website (Portfolio)** (`jmeza192.github.io-main/`)
+  - What it does: Quick portfolio with resume download, project summaries, and links.
+  - Live: https://jmeza192.github.io
+  - Code: https://github.com/jmeza192/jmeza192.github.io
+
+**Why This Matters**
+
+- Turns multi‑hop troubleshooting into deterministic workflows with verification and optional rollback
+- Standardized patterns: environment‑isolated configs, credential fallback, adaptive timing, pre/post checks
+- Produces artifacts (logs/reports) for change records and troubleshooting
 
 **Tech Stack**
 
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Juniper](https://img.shields.io/badge/Juniper-84B135?style=for-the-badge&logo=junipernetworks&logoColor=white)
 ![Aruba](https://img.shields.io/badge/Aruba-ED6F00?style=for-the-badge&logo=aruba&logoColor=white)
-![Arista](https://img.shields.io/badge/Arista-003D6B?style=for-the-badge&logoColor=white)
-![Palo Alto Networks](https://img.shields.io/badge/Palo%20Alto%20Networks-F37021?style=for-the-badge&logo=palantir&logoColor=white)
+![Arista](https://img.shields.io/badge/Arista-003D6B?style=for-the-badge&logo=arista-networks&logoColor=white)
+![Palo Alto Networks](https://img.shields.io/badge/Palo%20Alto%20Networks-F37021?style=for-the-badge&logo=paloaltonetworks&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
@@ -39,10 +51,12 @@ Im Jesus Meza and im currently a Senior Network Engineer with HCLTech where I am
 ![Cisco ISE](https://img.shields.io/badge/Cisco%20ISE-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Aruba ClearPass](https://img.shields.io/badge/Aruba%20ClearPass-ED6F00?style=for-the-badge&logo=aruba&logoColor=white)
 
-**Links**
+**Quick Links**
 
-- **GitHub:** https://github.com/jmeza192
-- **LinkedIn:** https://www.linkedin.com/in/jmeza192
-- **Resume (PDF):** ./resume.pdf
+- `Vlan-Changer/` — local code folder
+- `network-toolbox-public/` — local code folder
+- `jmeza192.github.io-main/` — site and `resume.pdf`
+- Resume (PDF): `jmeza192.github.io-main/resume.pdf`
 
 If you’d like a quick walkthrough or deeper technical detail on any project, feel free to reach out via LinkedIn.
+
