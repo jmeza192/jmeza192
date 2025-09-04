@@ -13,7 +13,7 @@ I design, secure, and automate networks for hospitals and large enterprises. I b
 - **Certifications:** CCNP, CCNA, JNCIA
 - **Focus:** Network automation, security hardening, and scalable operations
 - **Lab:** Proxmox + EVE‑NG Pro, Linux VMs with Ansible, GitHub Runner, and Netbox, Windows LTSC Client, Windows Server (DHCP,AD,Certificate Authority, LDAP)
-- **Interests:** QoS, App‑ID/TLS decryption, BGP/OSPF, Wi‑Fi design
+- **Interests:** Automating Networks through the use of Ansible, Pythong and Terraform
 
 **Selected Projects**
 
