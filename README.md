@@ -16,12 +16,22 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
   - Code: https://github.com/jmeza192/Vlan_Changer
   - Tech: Python, Netmiko, GitHub Actions
 
+- **Wiping Config** (inside `network-toolbox-public/tools/wiping config/`)
+  - Problem: Baseline cleanup and decommission steps require many manual commands and are easy to miss.
+  - What it does: Removes SNMP/NTP, banners, logging hosts, TACACS servers/keys, specific users, legacy TTY settings, and more with clear progress/error logs.
+  - Results: Collapses per‑device cleanup into a single repeatable run — speeding up fleet resets and standardization.
+  - Code: https://github.com/jmeza192/network-toolbox-public/tree/main/tools/wiping%20config
+  - Tech: Python, Netmiko
+  - Note: Destructive by design — use intentionally and review scope.
+
 - **Network Toolbox** (`network-toolbox-public/`)
   - Problem: Routine fleet tasks (AP discovery, serial collection, TACACS audits, config cleanup) consumed time and were error‑prone.
   - What it does: A set of targeted scripts with `.env` templates per tool. Batch operations against device lists, robust credential fallback, and clear progress/logging.
   - Results: Cuts repetitive CLI steps to a single command; easier to run at scale and hand off to teammates with templates.
   - Code: https://github.com/jmeza192/network-toolbox-public
   - Tech: Python, Netmiko, Pandas, dotenv
+
+
 
 - **Personal Website (Portfolio)** (`jmeza192.github.io-main/`)
   - What it does: Quick portfolio with resume download, project summaries, and links.
@@ -59,4 +69,3 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
 - Resume (PDF): `jmeza192.github.io-main/resume.pdf`
 
 If you’d like a quick walkthrough or deeper technical detail on any project, feel free to reach out via LinkedIn.
-
