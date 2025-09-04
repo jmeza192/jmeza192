@@ -16,11 +16,11 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
   - Code: https://github.com/jmeza192/Vlan_Changer
   - Tech: Python, Netmiko, GitHub Actions
 
-- **Wiping Config** (inside `network-toolbox-public/tools/wiping config/`)
+- **Wiping Config** (inside `wiping-config/`)
   - Problem: Needed to Sanitize 100s of network devices before handing them over.
   - What it does: Removes SNMP/NTP, banners, logging hosts, TACACS servers/keys, specific users, legacy TTY settings, and more with clear progress/error logs. Utilized nornir to allow to program to run on 100 devices at a time
   - Results: Allowed our team to quickly sanitize 100s of network devices saving us days of work in prepping devices to handover
-  - Code: https://github.com/jmeza192/network-toolbox-public/tree/main/tools/wiping%20config
+  - Code: https://github.com/jmeza192/wiping-config
   - Tech: Python, Netmiko, Nornir
   - Note: Destructive by design — use intentionally and review scope.
 
