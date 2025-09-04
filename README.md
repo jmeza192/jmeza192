@@ -17,11 +17,11 @@ I build small, reliable network‑automation tools that turn tedious multi‑ste
   - Tech: Python, Netmiko, GitHub Actions
 
 - **Wiping Config** (inside `network-toolbox-public/tools/wiping config/`)
-  - Problem: Baseline cleanup and decommission steps require many manual commands and are easy to miss.
-  - What it does: Removes SNMP/NTP, banners, logging hosts, TACACS servers/keys, specific users, legacy TTY settings, and more with clear progress/error logs.
+  - Problem: Needed to Sanitize 100s of network devices before handing them over.
+  - What it does: Removes SNMP/NTP, banners, logging hosts, TACACS servers/keys, specific users, legacy TTY settings, and more with clear progress/error logs. Utilized nornir to allow to program to run on 100 devices at a time
   - Results: Allowed our team to quickly sanitize 100s of network devices saving us days of work in prepping devices to handover
   - Code: https://github.com/jmeza192/network-toolbox-public/tree/main/tools/wiping%20config
-  - Tech: Python, Netmiko
+  - Tech: Python, Netmiko, Nornir
   - Note: Destructive by design — use intentionally and review scope.
 
 - **Network Toolbox** (`network-toolbox-public/`)
